@@ -12,7 +12,7 @@ import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 // import MenuItem from "@mui/material/MenuItem";
 import logo from "../../../assets/images/logo1.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 // const pages = ["Products", "Pricing", "Blog"];
@@ -241,9 +241,11 @@ function Navbar() {
               </Box>
             </>
           ) : (
-            <button className=" px-3 py-1 bg-[#FF914D] text-sm  font-semibold rounded">
-              Login
-            </button>
+            <Link to="/login">
+              <button className=" px-3 py-1 bg-[#FF914D] text-sm  font-semibold rounded">
+                Login
+              </button>
+            </Link>
           )}
         </Toolbar>
       </Container>
