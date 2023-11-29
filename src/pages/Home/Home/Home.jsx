@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../Banner/Banner";
 import Features from "../Features/Features";
+import AboutUs from "../AboutUs/AboutUs";
+import FeaturedClasses from "../FeaturedClasses/FeaturedClasses";
+import Testimonials from "../../Testimonials/Testimonials";
+import Blogs from "../Blogs/Blogs";
+import Newsletter from "../Newsletter/Newsletter";
+import OurTeam from "../../OurTeam/OurTeam";
 
 const Home = () => {
   return (
@@ -11,7 +17,12 @@ const Home = () => {
       <div>
         <Banner></Banner>
         <Features></Features>
-        <p>This is home page</p>
+        <AboutUs></AboutUs>
+        <FeaturedClasses></FeaturedClasses>
+        <Testimonials></Testimonials>
+        <Blogs></Blogs>
+        <Newsletter></Newsletter>
+        <OurTeam></OurTeam>
       </div>
     </>
   );

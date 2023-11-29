@@ -35,10 +35,10 @@ const Banner = () => {
                   <span className="text-[#FF914D] font-semibold">Fitness</span>{" "}
                   is Happiness
                 </h1>
-                <p>Exercise Really Makes You Happier</p>
+                <p className="text-white">Exercise Really Makes You Happier</p>
                 <Link className="mt-20" to={"/classes"}>
                   <button className="py-3 mt-20 w-fit px-4 uppercase font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300">
-                    Get Start
+                    Join Now
                   </button>
                 </Link>
               </div>
@@ -54,10 +54,10 @@ const Banner = () => {
                   <span className="text-[#FF914D] font-semibold">Fitness</span>{" "}
                   is Happiness
                 </h1>
-                <p>Exercise Really Makes You Happier</p>
+                <p className="text-white">Exercise Really Makes You Happier</p>
                 <Link className="mt-20">
                   <button className="py-3 mt-20 w-fit px-4 uppercase font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300">
-                    Get Start
+                    Join Now
                   </button>
                 </Link>
               </div>
@@ -73,10 +73,10 @@ const Banner = () => {
                   <span className="text-[#FF914D] font-semibold">Fitness</span>{" "}
                   is Happiness
                 </h1>
-                <p>Exercise Really Makes You Happier</p>
+                <p className="text-white">Exercise Really Makes You Happier</p>
                 <Link className="mt-20">
                   <button className="py-3 mt-20 w-fit uppercase px-4 font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300">
-                    Get Start
+                    Join Now
                   </button>
                 </Link>
               </div>

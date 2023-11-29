@@ -14,3 +14,6 @@ body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
 }
+p {
+  color: rgb(85, 85, 85);
+}

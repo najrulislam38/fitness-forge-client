@@ -1,0 +1,29 @@
+[
+    {
+      "title": "Achieve Your Fitness Goals",
+      "description": "Embark on a journey to a healthier you with our advanced fitness tracker. Set personalized goals, track your progress, and celebrate every milestone.",
+      "image": "https://i.ibb.co/Dtbj5T1/latest-blog-3.jpg",
+      "posted_date": "2023-11-29",
+      "author": {
+        "name": "John Smith"
+      }
+    },
+    {
+      "title": "Community Spotlight: Inspiring Journeys",
+      "description": "Discover incredible stories from our community members. Real people, real results. Join the conversation and share your fitness journey!",
+      "image": "https://i.ibb.co/Mhr1H5D/latest-blog-2.jpg",
+      "posted_date": "2023-11-28",
+      "author": {
+        "name": "Emily Davis"
+      }
+    },
+    {
+      "title": "The Science Behind Our Tracker",
+      "description": "Explore the technology that powers our fitness tracker. Accurate data, personalized insights, and cutting-edge features designed to elevate your fitness experience.",
+      "image": "https://i.ibb.co/y5Xyq0M/latest-blog-1.jpg",
+      "posted_date": "2023-11-27",
+      "author": {
+        "name": "Dr. Amanda Johnson"
+      }
+    }
+  ]
