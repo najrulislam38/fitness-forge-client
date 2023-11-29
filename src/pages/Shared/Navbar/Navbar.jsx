@@ -103,7 +103,8 @@ function Navbar() {
         color: "black",
         padding: "5px 0",
       }}
-      position="static"
+      position="sticky"
+      top="0"
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>

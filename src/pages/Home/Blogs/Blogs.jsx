@@ -1,12 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import Container from "../../Shared/Container/Container";
-import useAxiosPublic from "../../../assets/hooks/useAxiosPublic";
+import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import BlogCard from "./blogCard";
 
 const Blogs = () => {
   const axiosPublic = useAxiosPublic();
 
-  const { data: blogs } = useQuery({
+  const { data: blogs = [] } = useQuery({
     queryKey: ["blogs"],
     queryFn: async () => {
       const res = await axiosPublic.get("/blogs");
