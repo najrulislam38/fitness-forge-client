@@ -10,7 +10,7 @@ const PageCover = ({ backgroundImg, title }) => {
       bgImageAlt="Page image"
       strength={200}
     >
-      <div className={`hero h-[500px] py-20`}>
+      <div className={`hero h-[600px] py-20`}>
         <Container>
           <div
             className={`w-full mx-auto px-5 h-5/6  bg-black bg-opacity-60 py-20  mt-20   hero-content text-center  text-white`}

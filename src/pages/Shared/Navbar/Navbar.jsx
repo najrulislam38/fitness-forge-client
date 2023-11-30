@@ -14,6 +14,8 @@ import Tooltip from "@mui/material/Tooltip";
 import logo from "../../../assets/images/logo1.png";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
+import useAuth from "../../../hooks/useAuth";
+import toast from "react-hot-toast";
 
 // const pages = ["Products", "Pricing", "Blog"];
 // const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -22,7 +24,7 @@ function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const user = false;
+  const { user, logOut } = useAuth();
 
   const navItems = (
     <>
@@ -94,6 +96,16 @@ function Navbar() {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        toast.success("Logout successful.");
+      })
+      .catch((error) => {
+        toast.error(`${error.message}`);
+      });
   };
 
   return (
@@ -210,14 +222,15 @@ function Navbar() {
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                     <Avatar
                       alt="Remy Sharp"
-                      src="/static/images/avatar/2.jpg"
+                      src={user?.photoURL}
+                      // src="/static/images/avatar/2.jpg"
                     />
                   </IconButton>
                 </Tooltip>
                 <Menu
                   sx={{ mt: "45px" }}
                   id="menu-appbar"
-                  anchorEl={anchorElUser}
+                  // anchorEl={anchorElUser}
                   anchorOrigin={{
                     vertical: "top",
                     horizontal: "right",
@@ -235,7 +248,10 @@ function Navbar() {
                       <Typography textAlign="center">{setting}</Typography>
                     </MenuItem>
                   ))} */}
-                  <button className="mx-2 px-3 py-1 bg-[#FF914D] text-sm  font-semibold rounded">
+                  <button
+                    onClick={handleLogOut}
+                    className="mx-2 px-3 py-1 bg-[#FF914D] text-sm  font-semibold rounded"
+                  >
                     Log Out
                   </button>
                 </Menu>
