@@ -4,7 +4,6 @@ import TrainerCard from "./TrainerCard";
 
 const Trainers = () => {
   const [trainers] = useTrainers();
-  console.log(trainers);
 
   return (
     <div className="my-20">
