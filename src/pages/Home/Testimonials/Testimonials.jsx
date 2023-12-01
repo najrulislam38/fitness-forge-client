@@ -1,9 +1,8 @@
-import SectionHeader from "../../Components/SectionHeader/SectionHeader";
-// import Container from "../Shared/Container/Container";
-import img1 from "../../assets/images/Testimonial/testimonial-1.jpg";
-import img2 from "../../assets/images/Testimonial/testimonial-2.jpg";
-import img3 from "../../assets/images/Testimonial/testimonial-3.jpg";
-import Container from "../Shared/Container/Container";
+import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
+import Container from "../../Shared/Container/Container";
+import img1 from "../../../assets/images/Testimonial/testimonial-1.jpg";
+import img2 from "../../../assets/images/Testimonial/testimonial-2.jpg";
+import img3 from "../../../assets/images/Testimonial/testimonial-3.jpg";
 
 const Testimonials = () => {
   return (

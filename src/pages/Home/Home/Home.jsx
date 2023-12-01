@@ -3,10 +3,10 @@ import Banner from "../Banner/Banner";
 import Features from "../Features/Features";
 import AboutUs from "../AboutUs/AboutUs";
 import FeaturedClasses from "../FeaturedClasses/FeaturedClasses";
-import Testimonials from "../../Testimonials/Testimonials";
 import Blogs from "../Blogs/Blogs";
 import Newsletter from "../Newsletter/Newsletter";
 import OurTeam from "../../OurTeam/OurTeam";
+import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
   return (

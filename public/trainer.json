@@ -1,0 +1,60 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "age": 30,
+    "image": "https://i.ibb.co/TbLkzVd/medium-shot-smiley-man-gym.jpg",
+    "experience": "2+ years",
+    "skills": ["Strength Training", "HIIT Workouts", "Nutritional Counseling"],
+    "available_time_in_a_week": ["Monday", "Wednesday", "Friday"],
+    "available_time_in_a_date": ["09:00 AM - 10:00 AM", "02:00 PM - 03:00 PM"],
+    "social_links": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#",
+      "linkedin": "#"
+    },
+    "train_category": ["Normal", "Medium", "High"],
+    "price": [200, 400, 500]
+  },
+  {
+    "name": "Alex Sabila ",
+    "email": "sab@gmail.com",
+    "age": 35,
+    "image": "https://i.ibb.co/TMJRPMp/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall.jpg",
+    "experience": "3+ years",
+    "skills": ["Cardio", "Weightlifting", "Personalized Training Plans"],
+    "available_time_in_a_week": ["Monday", "Wednesday", "Friday", "Sunday"],
+    "available_time_in_a_date": [
+      "08:00 AM - 09:00 AM",
+      "01:00 PM - 02:00 PM",
+      "06:00 PM - 07:00 PM"
+    ],
+    "social_links": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#",
+      "linkedin": "#"
+    },
+    "train_category": ["Normal", "Medium", "High"],
+    "price": [200, 400, 500]
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "age": 28,
+    "image": "https://i.ibb.co/7yB1VKN/portrait-athletic-fitness-male-dressed-sportswear-grey-vignette-background.jpg",
+    "experience": "2+ years",
+    "skills": ["Yoga", "Pilates", "Flexibility Training"],
+    "available_time_in_a_week": ["Tuesday", "Thursday", "Saturday"],
+    "available_time_in_a_date": ["10:00 AM - 11:00 PM", "04:00 PM - 05:00 PM"],
+    "social_links": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#",
+      "linkedin": "#"
+    },
+    "train_category": ["Normal", "Medium", "High"],
+    "price": [200, 400, 500]
+  }
+]
