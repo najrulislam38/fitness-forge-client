@@ -6,6 +6,8 @@ import Gallery from "../pages/Gallery/Gallery/Gallery";
 import Register from "../pages/Register/Register";
 import Trainer from "../pages/Trainer/Trainer/Trainer";
 import SingleTrainer from "../pages/SingleTrainer/SingleTrainer";
+import BeATrainer from "../pages/BeATrainer/BeATrainer";
+import PrivateRoute from "./PrivateRoute";
 
 const Routes = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const Routes = createBrowserRouter([
         element: <SingleTrainer></SingleTrainer>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/trainers/${params.id}`),
+      },
+      {
+        path: "be-a-trainer",
+        element: (
+          <PrivateRoute>
+            <BeATrainer />
+          </PrivateRoute>
+        ),
       },
       {
         path: "classes",

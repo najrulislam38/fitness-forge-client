@@ -1,0 +1,12 @@
+form > div > label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+form > div > input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
