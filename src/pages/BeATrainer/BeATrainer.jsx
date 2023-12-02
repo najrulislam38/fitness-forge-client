@@ -42,7 +42,6 @@ const BeATrainer = () => {
     // console.log(res.data);
 
     if (res.data.success) {
-      // now send the menu item data to the server with the image url
       const trainerRequestInfo = {
         name: data.name,
         email: user?.email,

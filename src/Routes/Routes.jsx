@@ -8,6 +8,11 @@ import Trainer from "../pages/Trainer/Trainer/Trainer";
 import SingleTrainer from "../pages/SingleTrainer/SingleTrainer";
 import BeATrainer from "../pages/BeATrainer/BeATrainer";
 import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../Layout/Dashboard";
+import UserHome from "../pages/Dashboard/UserDashboard/UserHome/UserHome";
+import UserActivity from "../pages/Dashboard/UserDashboard/UserActivity/UserActivity";
+import UserProfile from "../pages/Dashboard/UserDashboard/UserProfile/UserProfile";
+import RecommendedClass from "../pages/Dashboard/UserDashboard/RecommendedClass/RecommendedClass";
 
 const Routes = createBrowserRouter([
   {
@@ -55,6 +60,49 @@ const Routes = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>,
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
+    children: [
+      // user dashboard children layout
+      {
+        path: "/dashboard",
+        element: (
+          <PrivateRoute>
+            <UserHome></UserHome>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/activity",
+        element: (
+          <PrivateRoute>
+            <UserActivity></UserActivity>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/user-profile",
+        element: (
+          <PrivateRoute>
+            <UserProfile />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/recommended-classes",
+        element: (
+          <PrivateRoute>
+            <RecommendedClass></RecommendedClass>
+          </PrivateRoute>
+        ),
       },
     ],
   },
