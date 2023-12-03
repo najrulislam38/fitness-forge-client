@@ -23,6 +23,7 @@ import ManageSlots from "../pages/Dashboard/TrainerDashboard/ManageSlots/ManageS
 import ManageMember from "../pages/Dashboard/TrainerDashboard/ManageMember/ManageMember";
 import AddNewForum from "../pages/Shared/AddNewForum/AddNewForum";
 import AddNewClass from "../pages/Dashboard/TrainerDashboard/AddNewClass/AddNewClass";
+import Community from "../pages/Community/Community/Community";
 
 const Routes = createBrowserRouter([
   {
@@ -61,7 +62,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "community",
-        element: <Trainer />,
+        element: <Community />,
       },
       {
         path: "login",
@@ -122,6 +123,23 @@ const Routes = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: "/dashboard/add-new-forum",
+        element: (
+          <PrivateRoute>
+            {(
+              <TrainerRoute>
+                <AddNewForum />
+              </TrainerRoute>
+            ) || (
+              <AdminRoute>
+                <AddNewForum />
+              </AdminRoute>
+            )}
+          </PrivateRoute>
+        ),
+      },
+
       // Trainer dashboard routes
       {
         path: "/dashboard/manage-slots",
@@ -143,16 +161,16 @@ const Routes = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/dashboard/add-new-forum",
-        element: (
-          <PrivateRoute>
-            <TrainerRoute>
-              <AddNewForum />
-            </TrainerRoute>
-          </PrivateRoute>
-        ),
-      },
+      // {
+      //   path: "/dashboard/add-new-forum",
+      //   element: (
+      //     <PrivateRoute>
+      //       <TrainerRoute>
+      //         <AddNewForum />
+      //       </TrainerRoute>
+      //     </PrivateRoute>
+      //   ),
+      // },
       {
         path: "/dashboard/add-new-class",
         element: (

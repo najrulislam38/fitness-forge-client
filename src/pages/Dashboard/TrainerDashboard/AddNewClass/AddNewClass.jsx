@@ -1,7 +1,9 @@
+import SectionHeader from "../../../../Components/SectionHeader/SectionHeader";
+
 const AddNewClass = () => {
   return (
     <div>
-      <h1>add new class</h1>
+      <SectionHeader title={"Add Class"}></SectionHeader>
     </div>
   );
 };

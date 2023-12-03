@@ -1,7 +1,9 @@
+import SectionHeader from "../../../../Components/SectionHeader/SectionHeader";
+
 const ManageSlots = () => {
   return (
     <div>
-      <h1>manage slots.</h1>
+      <SectionHeader title={"Manage Slots"}></SectionHeader>
     </div>
   );
 };

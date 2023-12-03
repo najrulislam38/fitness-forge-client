@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to High-Intensity Interval Training (HIIT)",
+    "description": "Discuss the benefits and techniques of HIIT workouts. Share your experiences and tips for incorporating HIIT into your fitness routine."
+  },
+  {
+    "id": 2,
+    "title": "Nutrition Strategies for Muscle Building",
+    "description": "Explore different nutrition plans and dietary tips to support muscle growth. Share your favorite muscle-building recipes and meal plans."
+  },
+  {
+    "id": 3,
+    "title": "Running Enthusiasts Unite!",
+    "description": "Connect with fellow runners to discuss training programs, marathon experiences, and the latest running gear. Share your favorite running routes and challenges."
+  },
+  {
+    "id": 4,
+    "title": "Yoga and Mindfulness",
+    "description": "Join the conversation about the benefits of yoga for both physical and mental well-being. Discuss different yoga styles, poses, and meditation techniques."
+  },
+  {
+    "id": 5,
+    "title": "Weightlifting Form Check",
+    "description": "Get feedback on your weightlifting techniques. Share videos or descriptions of your lifts, and receive advice from the community to improve your form and prevent injuries."
+  },
+  {
+    "id": 6,
+    "title": "Healthy Recipes Corner",
+    "description": "Exchange delicious and nutritious recipes with fellow fitness enthusiasts. From protein-packed meals to refreshing smoothies, share your culinary creations and tips."
+  },
+  {
+    "id": 7,
+    "title": "Fitness Challenges and Accountability",
+    "description": "Join or create fitness challenges to stay motivated and accountable. Share your progress, setbacks, and celebrate achievements with the community."
+  },
+  {
+    "id": 8,
+    "title": "Mind-body Connection: Pilates and Beyond",
+    "description": "Discuss the mind-body connection through Pilates, barre, and other holistic fitness practices. Share your experiences and discover new ways to enhance overall well-being."
+  },
+  {
+    "id": 9,
+    "title": "Injury Prevention Strategies",
+    "description": "Share tips and strategies for preventing injuries during workouts. Discuss proper warm-up routines, stretching techniques, and injury recovery experiences."
+  },
+  {
+    "id": 10,
+    "title": "Fitness Tech Talk",
+    "description": "Explore the latest fitness gadgets, apps, and technology. Share your experiences with wearables, fitness trackers, and other tech tools that enhance your training."
+  }
+]

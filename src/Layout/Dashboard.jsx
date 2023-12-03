@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaWallet } from "react-icons/fa6";
+import { IoMdAddCircleOutline } from "react-icons/io";
 import { Helmet } from "react-helmet-async";
 import useAdmin from "../hooks/useAdmin";
 import useTrainer from "../hooks/useTrainer";
@@ -61,6 +62,14 @@ const Dashboard = () => {
           <FaWallet /> <span>Balance</span>
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to={"/dashboard/add-new-forum"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FiCheckCircle /> <span>Add New Forum</span>
+        </NavLink>
+      </li>
     </>
   );
 
@@ -87,7 +96,7 @@ const Dashboard = () => {
           to={"/dashboard/manage-member"}
           className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
         >
-          <FaRegUserCircle /> <span>Manage Member</span>
+          <FaListUl /> <span>Manage Member</span>
         </NavLink>
       </li>
       <li>
@@ -103,7 +112,7 @@ const Dashboard = () => {
           to={"/dashboard/add-new-class"}
           className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
         >
-          <FiCheckCircle /> <span>Add New Class</span>
+          <IoMdAddCircleOutline /> <span>Add New Class</span>
         </NavLink>
       </li>
     </>
