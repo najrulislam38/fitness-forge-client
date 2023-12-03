@@ -24,11 +24,13 @@ import ManageMember from "../pages/Dashboard/TrainerDashboard/ManageMember/Manag
 import AddNewForum from "../pages/Shared/AddNewForum/AddNewForum";
 import AddNewClass from "../pages/Dashboard/TrainerDashboard/AddNewClass/AddNewClass";
 import Community from "../pages/Community/Community/Community";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const Routes = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -76,6 +78,7 @@ const Routes = createBrowserRouter([
   },
   {
     path: "dashboard",
+    errorElement: <ErrorPage />,
     element: (
       <PrivateRoute>
         <Dashboard />
