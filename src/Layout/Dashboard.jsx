@@ -1,14 +1,113 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo1.png";
 import "./Dashboard.css";
-import { FaHome } from "react-icons/fa";
 import { FaAtlassian } from "react-icons/fa6";
-import { FaRegUserCircle } from "react-icons/fa";
+import {
+  FaRegUserCircle,
+  FaExternalLinkAlt,
+  FaHome,
+  FaListUl,
+} from "react-icons/fa";
 import { FiCheckCircle } from "react-icons/fi";
+import { FaWallet } from "react-icons/fa6";
 import { Helmet } from "react-helmet-async";
+import useAdmin from "../hooks/useAdmin";
+import useTrainer from "../hooks/useTrainer";
 
 const Dashboard = () => {
+  const [isAdmin] = useAdmin();
+  const [isTrainer] = useTrainer();
   const { pathname } = useLocation();
+
+  const adminDashboardLinks = (
+    <>
+      <li>
+        <NavLink
+          to={"/dashboard"}
+          className={pathname === "/dashboard" ? "text-[#FF914D]" : ""}
+        >
+          <FaHome /> <span>Admin Home</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/all-subscribers"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FaAtlassian /> <span>All Subscribers</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/all-trainers"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FaExternalLinkAlt /> <span>All Trainers</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/applied-trainers"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FaListUl /> <span>Applied Trainers</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/admin-balance"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FaWallet /> <span>Balance</span>
+        </NavLink>
+      </li>
+    </>
+  );
+
+  const trainerDashboardLinks = (
+    <>
+      <li>
+        <NavLink
+          to={"/dashboard"}
+          className={pathname === "/dashboard" ? "text-[#FF914D]" : ""}
+        >
+          <FaHome /> <span>Trainers Home</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/manage-slots"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FaAtlassian /> <span>Manage Slots</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/manage-member"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FaRegUserCircle /> <span>Manage Member</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/add-new-forum"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FiCheckCircle /> <span>Add New Forum</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/dashboard/add-new-class"}
+          className={({ isActive }) => (isActive ? "text-[#FF914D]" : "")}
+        >
+          <FiCheckCircle /> <span>Add New Class</span>
+        </NavLink>
+      </li>
+    </>
+  );
   const userDashboardLinks = (
     <>
       <li>
@@ -58,18 +157,24 @@ const Dashboard = () => {
       </li>
     </>
   );
+
+  // console.log(isAdmin);
   return (
     <>
       <Helmet>
         <title>Fitness Forge | Dashboard</title>
       </Helmet>
       <div className="w-full h-full  flex">
-        <div className="w-[20%] bg-gray-200 border-r-2 border-gray-400 min-h-screen block overflow-hidden">
+        <div className="max-w-[20%] flex-1 bg-gray-200 border-r-2 border-gray-400 min-h-screen block overflow-hidden">
           <div className="mt-5 flex justify-center items-center">
             <img src={logo} alt="" className="hidden lg:block w-36" />
           </div>
           <ul className="dashboard-routes w-full ">
-            {userDashboardLinks}
+            {isAdmin
+              ? adminDashboardLinks
+              : isTrainer
+              ? trainerDashboardLinks
+              : userDashboardLinks}
             <div className="my-5 lg:text-lg font-medium text-center w-fit mx-auto border-b-2 border-[#FF914D]">
               Common
             </div>

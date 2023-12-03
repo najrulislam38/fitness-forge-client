@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@material-tailwind/react": "^2.1.5",
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.14.18",
     "@mui/styled-engine-sc": "^6.0.0-alpha.6",
@@ -33,6 +34,7 @@
     "react-spinners": "^0.13.8",
     "sort-by": "^1.2.0",
     "styled-components": "^6.1.1",
+    "sweetalert2": "^11.10.1",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

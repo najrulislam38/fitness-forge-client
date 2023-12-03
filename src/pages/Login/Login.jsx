@@ -21,7 +21,7 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    console.log(email, password);
+    // console.log(email, password);
 
     loginUser(email, password)
       .then((result) => {
@@ -31,7 +31,7 @@ const Login = () => {
       })
       .catch((error) => {
         toast.error(`${error.message}`);
-        console.log(error);
+        // console.log(error);
       });
   };
 

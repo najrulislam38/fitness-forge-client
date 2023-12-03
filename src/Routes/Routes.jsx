@@ -13,6 +13,16 @@ import UserHome from "../pages/Dashboard/UserDashboard/UserHome/UserHome";
 import UserActivity from "../pages/Dashboard/UserDashboard/UserActivity/UserActivity";
 import UserProfile from "../pages/Dashboard/UserDashboard/UserProfile/UserProfile";
 import RecommendedClass from "../pages/Dashboard/UserDashboard/RecommendedClass/RecommendedClass";
+import AdminRoute from "./AdminRoute";
+import AllSubscriber from "../pages/Dashboard/AdminDashborad/AllSubscriber/AllSubscriber";
+import AllTrainers from "../pages/Dashboard/AdminDashborad/AllTrainers/AllTrainers";
+import AppliedTrainers from "../pages/Dashboard/AdminDashborad/AppliedTrainers/AppliedTrainers";
+import AdminBalance from "../pages/Dashboard/AdminDashborad/AdminBalance/AdminBalance";
+import TrainerRoute from "./TrainerRoute";
+import ManageSlots from "../pages/Dashboard/TrainerDashboard/ManageSlots/ManageSlots";
+import ManageMember from "../pages/Dashboard/TrainerDashboard/ManageMember/ManageMember";
+import AddNewForum from "../pages/Shared/AddNewForum/AddNewForum";
+import AddNewClass from "../pages/Dashboard/TrainerDashboard/AddNewClass/AddNewClass";
 
 const Routes = createBrowserRouter([
   {
@@ -71,7 +81,89 @@ const Routes = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      // user dashboard children layout
+      // admin dashboard children routes
+      {
+        path: "/dashboard/all-subscribers",
+        element: (
+          <PrivateRoute>
+            <AdminRoute>
+              <AllSubscriber />
+            </AdminRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/all-trainers",
+        element: (
+          <PrivateRoute>
+            <AdminRoute>
+              <AllTrainers />
+            </AdminRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/applied-trainers",
+        element: (
+          <PrivateRoute>
+            <AdminRoute>
+              <AppliedTrainers />
+            </AdminRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/admin-balance",
+        element: (
+          <PrivateRoute>
+            <AdminRoute>
+              <AdminBalance />
+            </AdminRoute>
+          </PrivateRoute>
+        ),
+      },
+      // Trainer dashboard routes
+      {
+        path: "/dashboard/manage-slots",
+        element: (
+          <PrivateRoute>
+            <TrainerRoute>
+              <ManageSlots />
+            </TrainerRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/manage-member",
+        element: (
+          <PrivateRoute>
+            <TrainerRoute>
+              <ManageMember />
+            </TrainerRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/add-new-forum",
+        element: (
+          <PrivateRoute>
+            <TrainerRoute>
+              <AddNewForum />
+            </TrainerRoute>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard/add-new-class",
+        element: (
+          <PrivateRoute>
+            <TrainerRoute>
+              <AddNewClass />
+            </TrainerRoute>
+          </PrivateRoute>
+        ),
+      },
+      // user dashboard children routes
       {
         path: "/dashboard",
         element: (
