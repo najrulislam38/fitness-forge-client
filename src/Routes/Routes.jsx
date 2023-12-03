@@ -48,7 +48,9 @@ const Routes = createBrowserRouter([
         path: "trainer/:id",
         element: <SingleTrainer></SingleTrainer>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/trainers/${params.id}`),
+          fetch(
+            `https://fitness-forge-server.vercel.app/trainers/${params.id}`
+          ),
       },
       {
         path: "be-a-trainer",

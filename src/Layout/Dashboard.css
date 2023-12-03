@@ -4,7 +4,7 @@
   font-weight: 500;
 }
 
-.dashboard-routes li a {
+.dashboard-routes > li > a {
   display: flex;
   justify-content: start;
   align-items: center;

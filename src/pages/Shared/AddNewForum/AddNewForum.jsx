@@ -10,7 +10,7 @@ const AddNewForum = () => {
   const axiosSecure = useAxiosSecure();
 
   const onSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
     const title = data?.title;
     const description = data?.desc;
 

@@ -20,7 +20,7 @@ const Community = () => {
     return <Loading />;
   }
 
-  console.log(forums);
+  //   console.log(forums);
   return (
     <div className="my-10">
       <Container>
