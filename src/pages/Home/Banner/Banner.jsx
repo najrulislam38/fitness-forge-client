@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,6 +13,7 @@ import banner2 from "../../../assets/images/Banner/banner-image-2.jpg";
 import banner3 from "../../../assets/images/Banner/banner-image-3.jpg";
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Swiper
@@ -36,8 +37,11 @@ const Banner = () => {
                   is Happiness
                 </h1>
                 <p className="text-white">Exercise Really Makes You Happier</p>
-                <Link className="mt-20" to={"/classes"}>
-                  <button className="py-3 mt-20 w-fit px-4 uppercase font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300">
+                <Link className="mt-20">
+                  <button
+                    onClick={() => navigate("/classes")}
+                    className="py-3 mt-20 w-fit px-4 uppercase font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300"
+                  >
                     Join Now
                   </button>
                 </Link>
@@ -56,7 +60,10 @@ const Banner = () => {
                 </h1>
                 <p className="text-white">Exercise Really Makes You Happier</p>
                 <Link className="mt-20">
-                  <button className="py-3 mt-20 w-fit px-4 uppercase font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300">
+                  <button
+                    onClick={() => navigate("/classes")}
+                    className="py-3 mt-20 w-fit px-4 uppercase font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300"
+                  >
                     Join Now
                   </button>
                 </Link>
@@ -75,7 +82,10 @@ const Banner = () => {
                 </h1>
                 <p className="text-white">Exercise Really Makes You Happier</p>
                 <Link className="mt-20">
-                  <button className="py-3 mt-20 w-fit uppercase px-4 font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300">
+                  <button
+                    onClick={() => navigate("/classes")}
+                    className="py-3 mt-20 w-fit uppercase px-4 font-medium rounded-md bg-[#FF914D] text-black  hover:bg-[#F5CCA0]  duration-300"
+                  >
                     Join Now
                   </button>
                 </Link>

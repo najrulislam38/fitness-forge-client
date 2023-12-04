@@ -29,8 +29,8 @@ const Login = () => {
         console.log(result.user);
         navigate(move);
       })
-      .catch((error) => {
-        toast.error(`${error.message}`);
+      .catch(() => {
+        // toast.error("username or password is invalid.");
         // console.log(error);
       });
   };
