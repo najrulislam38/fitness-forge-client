@@ -25,6 +25,8 @@ import AddNewForum from "../pages/Shared/AddNewForum/AddNewForum";
 import AddNewClass from "../pages/Dashboard/TrainerDashboard/AddNewClass/AddNewClass";
 import Community from "../pages/Community/Community/Community";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Classes from "../pages/Classes/Classes/Classes";
+import SingleClass from "../pages/SingleClass/SingleClass";
 
 const Routes = createBrowserRouter([
   {
@@ -60,7 +62,13 @@ const Routes = createBrowserRouter([
       },
       {
         path: "classes",
-        element: <Trainer />,
+        element: <Classes />,
+      },
+      {
+        path: "classes/:id",
+        element: <SingleClass />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/classes/${params.id}`),
       },
       {
         path: "community",
