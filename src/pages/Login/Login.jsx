@@ -30,7 +30,7 @@ const Login = () => {
         navigate(move);
       })
       .catch(() => {
-        // toast.error("username or password is invalid.");
+        toast.error("username or password is invalid.");
         // console.log(error);
       });
   };

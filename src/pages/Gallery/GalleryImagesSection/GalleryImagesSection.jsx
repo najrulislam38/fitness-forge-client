@@ -29,7 +29,7 @@ export default GalleryImagesSection;
 
 // const getArticles = async ({ pageParam = 0 }) => {
 //   const res = await fetch(
-//     `http://localhost:5000/gallery?limit=10&offset=${pageParam}`
+//     `https://fitness-forge-server.vercel.app/gallery?limit=10&offset=${pageParam}`
 //   );
 //   const data = await res.json();
 

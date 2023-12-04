@@ -50,7 +50,9 @@ const Routes = createBrowserRouter([
         path: "trainer/:id",
         element: <SingleTrainer></SingleTrainer>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/trainers/${params.id}`),
+          fetch(
+            `https://fitness-forge-server.vercel.app/trainers/${params.id}`
+          ),
       },
       {
         path: "be-a-trainer",
@@ -68,7 +70,7 @@ const Routes = createBrowserRouter([
         path: "classes/:id",
         element: <SingleClass />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/classes/${params.id}`),
+          fetch(`https://fitness-forge-server.vercel.app/classes/${params.id}`),
       },
       {
         path: "community",
