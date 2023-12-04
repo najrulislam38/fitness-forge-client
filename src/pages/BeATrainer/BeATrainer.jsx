@@ -195,7 +195,7 @@ const BeATrainer = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Age"
+                  placeholder="Available time in a week"
                   name="timeInAWeek"
                   id="timeInAWeek"
                   {...register("timeInAWeek", { required: true })}

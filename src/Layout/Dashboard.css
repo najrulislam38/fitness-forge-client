@@ -6,7 +6,6 @@
 
 .dashboard-routes > li > a {
   display: flex;
-  justify-content: start;
   align-items: center;
   gap: 8px;
 }

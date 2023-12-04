@@ -1,0 +1,62 @@
+[
+  {
+    "className": "Cardio Blast",
+    "instructor": "John Smith",
+    "durationMinutes": 60,
+    "location": "Fitness Studio A",
+    "price": 15.99,
+    "rating": 4.8,
+    "reviews": 32,
+    "description": "A high-intensity cardio workout to boost your heart rate and burn calories. Suitable for all fitness levels."
+  },
+  {
+    "className": "Yoga Flow",
+    "instructor": "Sarah Davis",
+    "durationMinutes": 75,
+    "location": "Yoga Studio B",
+    "price": 18.99,
+    "rating": 4.9,
+    "reviews": 45,
+    "description": "Experience the flow of yoga postures to enhance flexibility, strength, and inner calm. Open to beginners and advanced yogis alike."
+  },
+  {
+    "className": "Strength Training",
+    "instructor": "Mike Johnson",
+    "durationMinutes": 45,
+    "location": "Strength Area",
+    "price": 20.99,
+    "rating": 4.5,
+    "reviews": 28,
+    "description": "Build muscle and tone your body with this strength training class. Focus on proper form and technique under expert guidance."
+  },
+  {
+    "className": "Zumba Party",
+    "instructor": "Maria Garcia",
+    "durationMinutes": 50,
+    "location": "Dance Studio C",
+    "price": 14.99,
+    "rating": 4.7,
+    "reviews": 38,
+    "description": "Dance your way to fitness with the infectious energy of Zumba. A fun and lively class suitable for all dance enthusiasts."
+  },
+  {
+    "className": "Mindful Meditation",
+    "instructor": "Emily White",
+    "durationMinutes": 30,
+    "location": "Meditation Room",
+    "price": 12.99,
+    "rating": 4.6,
+    "reviews": 20,
+    "description": "Take a break from the hustle and bustle with guided mindfulness meditation. Enhance your mental well-being and find inner peace."
+  },
+  {
+    "className": "HIIT Express",
+    "instructor": "Chris Taylor",
+    "durationMinutes": 40,
+    "location": "HIIT Zone",
+    "price": 17.99,
+    "rating": 4.8,
+    "reviews": 36,
+    "description": "Get ready for a high-intensity interval training session that will push your limits and leave you feeling energized."
+  }
+]
