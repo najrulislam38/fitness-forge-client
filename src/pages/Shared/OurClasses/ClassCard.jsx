@@ -14,11 +14,11 @@ const ClassCard = ({ classInfo }) => {
           <h3 className="md:text-xl lg:text-2xl uppercase">{className} </h3>
           <p className="italic text-sm">{duration} training progress</p>
 
-          <p className="flex items-center gap-1 mt-3 mb-10">
+          <div className="flex items-center gap-1 mt-3 mb-10">
             <span className="font-medium">Rating:</span>{" "}
             <Rating style={{ maxWidth: 80 }} value={parseInt(rating)} />(
             {reviews})
-          </p>
+          </div>
           <hr />
           <div>
             <p className="text-black text-lg md:text-xl  ">

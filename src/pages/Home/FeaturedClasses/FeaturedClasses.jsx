@@ -7,7 +7,9 @@ const FeaturedClasses = () => {
     <section className="my-20">
       <Container>
         <SectionHeader title={"Featured Classes"}></SectionHeader>
-        <OurClasses />
+        <div>
+          <OurClasses />
+        </div>
       </Container>
     </section>
   );
