@@ -2,6 +2,14 @@
 
 ## Live link: [Fitness Forge](https://whimsical-belekoy-26c7bb.netlify.app/)
 
+## Server side github link: [Server side github link](https://github.com/najrulislam38/fitness-forge-server)
+
+## Used Technologies:
+ - React.js, Taiwlind.css, Material UI, Firebase, Node, Express.js and MongoDB.
+
+## Description 
+- Fitness Forge is an online Fitness Tracking Training website. A Trainer has been posting his/her's training post and a logged-in user can purchase this training course. Admin can be  controlled and main training  the website.
+
 ## Features of this project.
 
 - Allow users to create personalized profiles with their fitness goals, preferences, and progress tracking.
