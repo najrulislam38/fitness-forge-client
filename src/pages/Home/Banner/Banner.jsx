@@ -7,10 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
-import banner1 from "../../../assets/images/Banner/banner-image-1.jpg";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import banner3 from "../../../assets/images/Banner/banner-image-1.jpg";
 import banner2 from "../../../assets/images/Banner/banner-image-2.jpg";
-import banner3 from "../../../assets/images/Banner/banner-image-3.jpg";
+import banner1 from "../../../assets/images/Banner/banner-image-3.jpg";
 
 const Banner = () => {
   const navigate = useNavigate();
@@ -18,13 +18,16 @@ const Banner = () => {
     <div>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        spaceBetween={0}
         loop={true}
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 3000,
+        }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper max-h-screen"
       >
         <SwiperSlide>
