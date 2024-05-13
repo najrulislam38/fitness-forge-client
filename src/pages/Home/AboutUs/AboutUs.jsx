@@ -13,7 +13,7 @@ const AboutUs = () => {
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-offset="300"
-            data-aos-duration="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-sine"
           >
             <img
@@ -33,7 +33,7 @@ const AboutUs = () => {
             className="w-full lg:w-1/2"
             data-aos="fade-left"
             data-aos-anchor-placement="top-bottom"
-            data-aos-duration="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-sine"
           >
             <SectionHeader title={"About us"}></SectionHeader>

@@ -16,7 +16,7 @@ const Testimonials = () => {
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
               data-aos-offset="300"
-              data-aos-duration="300"
+              data-aos-duration="400"
               data-aos-easing="ease-in-sine"
             >
               <div className="w-[120px] md:w-[150px] h-[120px] md:h-[150px] mx-auto rounded-full overflow-hidden">
