@@ -15,7 +15,13 @@ const Blogs = () => {
   });
 
   return (
-    <section className="my-20">
+    <section
+      className="my-20"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-sine"
+    >
       <Container>
         <div>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-Poppins font-semibold uppercase ">

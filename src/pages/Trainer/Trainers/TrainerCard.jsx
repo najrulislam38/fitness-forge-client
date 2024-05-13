@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa6";
+import "./TrainerCard.css";
 
 const TrainerCard = ({ trainer }) => {
   const {
@@ -18,8 +19,13 @@ const TrainerCard = ({ trainer }) => {
     available_time_in_a_date,
   } = trainer;
   return (
-    <div className="border rounded-lg shadow-md p-3">
-      <img src={image} alt="" className="w-full lg:h-[260px] rounded-md" />
+    <div className="border rounded-lg shadow-md trainer-card p-3">
+      <img
+        src={image}
+        alt=""
+        loading="lazy"
+        className="w-full max-w-sm mx-auto lg:h-[260px] rounded-md"
+      />
       <div className="py-5 px-3 space-y-1">
         <h3 className="text-lg md:text-xl lg:text-2xl font-medium font-Poppins">
           {name}

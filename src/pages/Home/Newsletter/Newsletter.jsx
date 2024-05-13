@@ -32,7 +32,13 @@ const Newsletter = () => {
       });
   };
   return (
-    <section className="my-20">
+    <section
+      className="my-20"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="400"
+      data-aos-easing="ease-in-sine"
+    >
       <Container>
         <div className="w-full border-4 border-dashed p-10">
           <h2 className="test-xl md:text-2xl lg:text-3xl font-semibold text-center uppercase">
