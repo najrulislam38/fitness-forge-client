@@ -7,16 +7,35 @@ const AboutUs = () => {
   return (
     <section className="my-20">
       <Container>
-        <div className=" flex flex-col lg:flex-row gap-16">
-          <div className="w-full lg:w-1/2 flex gap-5">
-            <img src={aboutImg1} alt="" className="object-cover w-1/2" />
+        <div className=" flex flex-col lg:flex-row gap-16 overflow-hidden">
+          <div
+            className="w-full lg:w-1/2 flex gap-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-offset="300"
+            data-aos-duration="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <img
+              src={aboutImg1}
+              alt=""
+              loading="lazy"
+              className="object-cover w-1/2"
+            />
             <img
               src={aboutImg2}
               alt=""
+              loading="lazy"
               className="object-cover w-1/2 relative top-8"
             />
           </div>
-          <div className="w-full lg:w-1/2">
+          <div
+            className="w-full lg:w-1/2"
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="300"
+            data-aos-easing="ease-in-sine"
+          >
             <SectionHeader title={"About us"}></SectionHeader>
             <p className="text-sm md:text-base mb-6">
               Empowering your fitness journey with precision tracking,

@@ -1,6 +1,7 @@
 import { Rating } from "@smastrom/react-rating";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "./ClassCard.css";
 
 const ClassCard = ({ classInfo }) => {
   //   console.log(classInfo);
@@ -8,7 +9,14 @@ const ClassCard = ({ classInfo }) => {
     classInfo;
   return (
     <Link to={`/classes/${_id}`}>
-      <div className="border curser-pointer ">
+      <div
+        className="border curser-pointer classCard"
+        data-aos="zoom-in-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-offset="300"
+        data-aos-duration="400"
+        data-aos-easing="ease-in-sine"
+      >
         <img src={classImage} alt="" className="w-full" />
         <div className="p-5">
           <h3 className="md:text-xl lg:text-2xl uppercase">{className} </h3>
