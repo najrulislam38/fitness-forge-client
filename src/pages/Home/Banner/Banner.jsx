@@ -55,7 +55,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className="w-full h-full relative ">
             <img src={banner2} className="w-full  object-cover" alt="" />
-            <div className="absolute h-full w-full flex rounded-xl  gap-5 left-0 top-0 sm:py-20 md:py-32 lg:py-40 bg-black bg-opacity-30">
+            <div className="absolute h-full w-full flex rounded-xl  gap-5 left-0 top-0 sm:py-20 md:py-32 lg:py-40 bg-black bg-opacity-50">
               <div className="text-white space-y-4 w-full h-full  text-center">
                 <h1 className="text-3xl md:text-4xl lg:text-6xl">
                   <span className="text-[#FF914D] font-semibold">Fitness</span>{" "}
@@ -77,7 +77,7 @@ const Banner = () => {
         <SwiperSlide>
           <div className="w-full h-full relative ">
             <img src={banner3} className="w-full  object-cover" alt="" />
-            <div className="absolute h-full w-full flex rounded-xl  gap-5 left-0 top-0 sm:py-20 md:py-32 lg:py-40 bg-black bg-opacity-30">
+            <div className="absolute h-full w-full flex rounded-xl  gap-5 left-0 top-0 sm:py-20 md:py-32 lg:py-40 bg-black bg-opacity-50">
               <div className="text-white space-y-4 w-full h-full  text-center">
                 <h1 className="text-3xl md:text-4xl lg:text-6xl">
                   <span className="text-[#FF914D] font-semibold">Fitness</span>{" "}
