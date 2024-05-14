@@ -8,15 +8,20 @@ const Main = () => {
 
   useEffect(() => {
     setInitialLoading(true);
-    setTimeout(() => {
+    // setTimeout(() => {
+    //   setInitialLoading(false);
+    // }, 2000);
+    window.addEventListener("load", () => {
       setInitialLoading(false);
-    }, 3000);
+    });
   }, []);
   return (
     <>
       {initialLoading ? (
         <div>
-          <p>Loading....</p>
+          <div className="w-full h-screen flex justify-center items-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#FF914D] relative -top-10"></div>
+          </div>
         </div>
       ) : (
         <div>
