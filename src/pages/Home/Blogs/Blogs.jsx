@@ -20,7 +20,7 @@ const Blogs = () => {
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
       data-aos-offset="300"
-      data-aos-duration="400"
+      data-aos-duration="300"
       data-aos-easing="ease-in-sine"
     >
       <Container>

@@ -8,7 +8,7 @@ const OurClasses = () => {
     return <Loading />;
   }
   return (
-    <div className="my-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div className="my-10 grid gap-5 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
       {classes?.map((classInfo) => (
         <ClassCard key={classInfo._id} classInfo={classInfo}></ClassCard>
       ))}

@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import "./BlogCard.css";
 
 const BlogCard = ({ blog }) => {
   const { image, title, description, posted_date, author } = blog;
 
   return (
-    <div className="border shadow-md cursor-pointer image-hover:scale-110  overflow-hidden duration-500">
+    <div className="border blog-card shadow-md cursor-pointer image-hover:scale-110  overflow-hidden duration-500">
       <div>
         <img src={image} alt="" className="image" />
       </div>

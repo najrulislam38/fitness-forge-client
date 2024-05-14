@@ -1,11 +1,11 @@
-.classCard {
+.blog-card {
   overflow: hidden;
 }
 
-.classCard > img {
+.blog-card img {
   transition: transform 0.3s ease-in-out;
 }
 
-.classCard:hover > img {
+.blog-card:hover img {
   transform: scale(1.1);
 }
