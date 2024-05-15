@@ -11,6 +11,7 @@ const Main = () => {
     // setTimeout(() => {
     //   setInitialLoading(false);
     // }, 2000);
+    
     window.addEventListener("load", () => {
       setInitialLoading(false);
     });
